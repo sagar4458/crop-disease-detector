@@ -4,11 +4,11 @@
 
 A computer vision tool that identifies plant diseases from leaf images. Upload a photo and get the top 3 most likely conditions, confidence scores, and treatment recommendations.
 
-Built this because farmers in my area were applying the wrong treatments — fungicide for viral diseases, for example — simply because proper diagnosis was inaccessible and expensive. Wanted to see how far a lightweight pipeline could get without a GPU or cloud dependency.
+Built this because farmers in my area were applying the wrong treatments - fungicide for viral diseases, for example - simply because proper diagnosis was inaccessible and expensive. Wanted to see how far a lightweight pipeline could get without a GPU or cloud dependency.
 
 ## How it works
 
-Each image goes through a 45-feature extraction pipeline — RGB channel statistics at multiple scales, green/brown/yellow ratios, texture variance, edge density, spot density, and 16-bin grayscale histogram. A Random Forest classifier (500 trees) trained on the PlantVillage dataset maps these to one of 38 disease classes across 14 crop types.
+Each image goes through a 45-feature extraction pipeline - RGB channel statistics at multiple scales, green/brown/yellow ratios, texture variance, edge density, spot density, and 16-bin grayscale histogram. A Random Forest classifier (500 trees) trained on the PlantVillage dataset maps these to one of 38 disease classes across 14 crop types.
 
 CV accuracy: **84.8%** on 19,000 training samples.
 
