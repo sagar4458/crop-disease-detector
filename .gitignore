@@ -1,0 +1,8 @@
+data/raw/
+data/raw/train/
+data/raw/valid/
+model/*.joblib
+__pycache__/
+*.pyc
+*.pth
+*.h5

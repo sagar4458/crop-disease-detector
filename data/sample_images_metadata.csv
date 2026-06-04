@@ -1,0 +1,301 @@
+image_id,crop_type,disease_label,location,date_captured,confidence_score,time_of_day,weather
+IMG_0001.jpg,Tomato,Healthy,Field C,2025-07-08,0.697,Morning,Overcast
+IMG_0002.jpg,Wheat,Early Blight,Greenhouse 1,2025-06-01,0.682,Morning,Overcast
+IMG_0003.jpg,Wheat,Healthy,Field B,2025-09-08,0.803,Afternoon,Sunny
+IMG_0004.jpg,Potato,Yellow Leaf Curl,Field C,2025-08-05,0.723,Afternoon,Sunny
+IMG_0005.jpg,Tomato,Yellow Leaf Curl,Field A,2025-08-28,0.767,Afternoon,Sunny
+IMG_0006.jpg,Maize,Early Blight,Greenhouse 1,2025-06-18,0.75,Evening,Overcast
+IMG_0007.jpg,Pepper,Leaf Mold,Field A,2025-06-22,0.727,Afternoon,Sunny
+IMG_0008.jpg,Potato,Early Blight,Greenhouse 1,2025-08-15,0.866,Afternoon,Sunny
+IMG_0009.jpg,Pepper,Bacterial Spot,Field B,2025-08-23,0.968,Evening,Sunny
+IMG_0010.jpg,Wheat,Late Blight,Field B,2025-07-15,0.779,Evening,Overcast
+IMG_0011.jpg,Wheat,Leaf Mold,Field C,2025-06-08,0.929,Afternoon,Cloudy
+IMG_0012.jpg,Pepper,Early Blight,Field B,2025-08-07,0.873,Afternoon,Overcast
+IMG_0013.jpg,Maize,Late Blight,Field C,2025-07-08,0.903,Evening,Cloudy
+IMG_0014.jpg,Wheat,Yellow Leaf Curl,Greenhouse 1,2025-08-08,0.989,Morning,Overcast
+IMG_0015.jpg,Maize,Early Blight,Field A,2025-06-05,0.863,Evening,Cloudy
+IMG_0016.jpg,Wheat,Early Blight,Greenhouse 1,2025-09-20,0.989,Evening,Cloudy
+IMG_0017.jpg,Wheat,Healthy,Field A,2025-08-25,0.868,Morning,Cloudy
+IMG_0018.jpg,Maize,Late Blight,Greenhouse 1,2025-06-24,0.948,Afternoon,Overcast
+IMG_0019.jpg,Potato,Early Blight,Field C,2025-07-05,0.777,Morning,Overcast
+IMG_0020.jpg,Wheat,Healthy,Field C,2025-09-01,0.688,Afternoon,Cloudy
+IMG_0021.jpg,Potato,Healthy,Field B,2025-06-03,0.899,Morning,Overcast
+IMG_0022.jpg,Potato,Late Blight,Greenhouse 1,2025-07-09,0.829,Evening,Cloudy
+IMG_0023.jpg,Potato,Leaf Mold,Field C,2025-09-22,0.871,Afternoon,Overcast
+IMG_0024.jpg,Maize,Early Blight,Field B,2025-07-03,0.765,Evening,Overcast
+IMG_0025.jpg,Potato,Leaf Mold,Field A,2025-06-23,0.865,Morning,Sunny
+IMG_0026.jpg,Tomato,Bacterial Spot,Field A,2025-07-09,0.877,Morning,Overcast
+IMG_0027.jpg,Potato,Mosaic Virus,Field B,2025-09-26,0.788,Morning,Sunny
+IMG_0028.jpg,Maize,Bacterial Spot,Greenhouse 1,2025-09-15,0.944,Morning,Overcast
+IMG_0029.jpg,Tomato,Healthy,Greenhouse 1,2025-08-26,0.943,Morning,Sunny
+IMG_0030.jpg,Potato,Mosaic Virus,Field B,2025-09-06,0.745,Morning,Sunny
+IMG_0031.jpg,Maize,Early Blight,Field A,2025-06-03,0.965,Morning,Sunny
+IMG_0032.jpg,Maize,Mosaic Virus,Greenhouse 1,2025-07-28,0.786,Morning,Sunny
+IMG_0033.jpg,Maize,Healthy,Greenhouse 1,2025-08-26,0.917,Afternoon,Cloudy
+IMG_0034.jpg,Wheat,Mosaic Virus,Field B,2025-07-10,0.724,Morning,Overcast
+IMG_0035.jpg,Wheat,Healthy,Field C,2025-06-02,0.849,Evening,Overcast
+IMG_0036.jpg,Potato,Healthy,Field A,2025-07-03,0.852,Evening,Sunny
+IMG_0037.jpg,Maize,Early Blight,Field B,2025-06-20,0.678,Evening,Overcast
+IMG_0038.jpg,Wheat,Bacterial Spot,Field C,2025-07-22,0.894,Morning,Cloudy
+IMG_0039.jpg,Maize,Late Blight,Field C,2025-09-11,0.966,Morning,Sunny
+IMG_0040.jpg,Maize,Early Blight,Field A,2025-07-17,0.74,Afternoon,Sunny
+IMG_0041.jpg,Potato,Bacterial Spot,Field C,2025-07-15,0.933,Evening,Cloudy
+IMG_0042.jpg,Wheat,Healthy,Field C,2025-06-05,0.74,Morning,Overcast
+IMG_0043.jpg,Wheat,Late Blight,Field C,2025-08-20,0.722,Afternoon,Sunny
+IMG_0044.jpg,Pepper,Mosaic Virus,Field C,2025-06-03,0.866,Afternoon,Sunny
+IMG_0045.jpg,Tomato,Bacterial Spot,Field B,2025-08-06,0.902,Evening,Overcast
+IMG_0046.jpg,Maize,Healthy,Field A,2025-06-23,0.957,Evening,Sunny
+IMG_0047.jpg,Pepper,Late Blight,Greenhouse 1,2025-07-02,0.755,Morning,Cloudy
+IMG_0048.jpg,Potato,Leaf Mold,Field A,2025-08-25,0.84,Afternoon,Overcast
+IMG_0049.jpg,Potato,Leaf Mold,Field B,2025-07-14,0.658,Evening,Cloudy
+IMG_0050.jpg,Maize,Leaf Mold,Field C,2025-07-26,0.888,Afternoon,Sunny
+IMG_0051.jpg,Maize,Leaf Mold,Field B,2025-09-12,0.754,Morning,Sunny
+IMG_0052.jpg,Tomato,Leaf Mold,Greenhouse 1,2025-08-09,0.944,Afternoon,Cloudy
+IMG_0053.jpg,Wheat,Yellow Leaf Curl,Field C,2025-06-04,0.948,Afternoon,Sunny
+IMG_0054.jpg,Wheat,Septoria Leaf Spot,Field A,2025-06-20,0.798,Evening,Cloudy
+IMG_0055.jpg,Maize,Early Blight,Greenhouse 1,2025-07-09,0.665,Afternoon,Sunny
+IMG_0056.jpg,Wheat,Leaf Mold,Field C,2025-09-03,0.973,Afternoon,Overcast
+IMG_0057.jpg,Pepper,Early Blight,Field C,2025-08-22,0.789,Afternoon,Overcast
+IMG_0058.jpg,Pepper,Late Blight,Field B,2025-09-22,0.97,Evening,Overcast
+IMG_0059.jpg,Potato,Septoria Leaf Spot,Greenhouse 1,2025-06-10,0.748,Afternoon,Overcast
+IMG_0060.jpg,Wheat,Bacterial Spot,Greenhouse 1,2025-09-15,0.88,Evening,Cloudy
+IMG_0061.jpg,Potato,Early Blight,Field C,2025-08-03,0.928,Morning,Overcast
+IMG_0062.jpg,Pepper,Leaf Mold,Field B,2025-07-01,0.666,Afternoon,Overcast
+IMG_0063.jpg,Tomato,Mosaic Virus,Greenhouse 1,2025-07-23,0.887,Afternoon,Cloudy
+IMG_0064.jpg,Potato,Late Blight,Field A,2025-06-25,0.795,Morning,Overcast
+IMG_0065.jpg,Wheat,Mosaic Virus,Field A,2025-07-28,0.691,Morning,Cloudy
+IMG_0066.jpg,Wheat,Bacterial Spot,Greenhouse 1,2025-09-27,0.958,Afternoon,Sunny
+IMG_0067.jpg,Maize,Mosaic Virus,Field C,2025-07-27,0.867,Evening,Cloudy
+IMG_0068.jpg,Potato,Septoria Leaf Spot,Greenhouse 1,2025-06-23,0.747,Afternoon,Cloudy
+IMG_0069.jpg,Pepper,Early Blight,Field B,2025-07-08,0.78,Morning,Overcast
+IMG_0070.jpg,Potato,Early Blight,Greenhouse 1,2025-09-11,0.834,Afternoon,Sunny
+IMG_0071.jpg,Potato,Yellow Leaf Curl,Greenhouse 1,2025-06-28,0.949,Evening,Cloudy
+IMG_0072.jpg,Maize,Healthy,Field C,2025-08-25,0.783,Afternoon,Overcast
+IMG_0073.jpg,Wheat,Leaf Mold,Greenhouse 1,2025-07-09,0.798,Morning,Cloudy
+IMG_0074.jpg,Pepper,Yellow Leaf Curl,Field B,2025-09-05,0.983,Evening,Sunny
+IMG_0075.jpg,Maize,Healthy,Field A,2025-09-05,0.945,Morning,Sunny
+IMG_0076.jpg,Pepper,Yellow Leaf Curl,Field C,2025-07-15,0.761,Afternoon,Cloudy
+IMG_0077.jpg,Maize,Septoria Leaf Spot,Field A,2025-09-01,0.905,Morning,Cloudy
+IMG_0078.jpg,Potato,Early Blight,Field A,2025-06-08,0.718,Morning,Overcast
+IMG_0079.jpg,Potato,Leaf Mold,Field B,2025-09-22,0.689,Morning,Cloudy
+IMG_0080.jpg,Pepper,Bacterial Spot,Field B,2025-06-25,0.929,Afternoon,Sunny
+IMG_0081.jpg,Wheat,Healthy,Field C,2025-09-13,0.97,Morning,Sunny
+IMG_0082.jpg,Wheat,Leaf Mold,Field A,2025-08-28,0.883,Morning,Overcast
+IMG_0083.jpg,Tomato,Bacterial Spot,Greenhouse 1,2025-08-03,0.822,Afternoon,Sunny
+IMG_0084.jpg,Maize,Mosaic Virus,Field A,2025-09-12,0.866,Afternoon,Overcast
+IMG_0085.jpg,Potato,Yellow Leaf Curl,Field B,2025-08-20,0.925,Evening,Cloudy
+IMG_0086.jpg,Maize,Yellow Leaf Curl,Field C,2025-08-28,0.733,Morning,Cloudy
+IMG_0087.jpg,Maize,Leaf Mold,Greenhouse 1,2025-09-11,0.66,Afternoon,Sunny
+IMG_0088.jpg,Maize,Leaf Mold,Field C,2025-08-11,0.745,Evening,Overcast
+IMG_0089.jpg,Pepper,Healthy,Field B,2025-06-08,0.895,Afternoon,Overcast
+IMG_0090.jpg,Potato,Mosaic Virus,Greenhouse 1,2025-09-26,0.656,Afternoon,Sunny
+IMG_0091.jpg,Maize,Leaf Mold,Field C,2025-08-16,0.838,Afternoon,Cloudy
+IMG_0092.jpg,Wheat,Bacterial Spot,Field C,2025-09-09,0.754,Morning,Sunny
+IMG_0093.jpg,Potato,Bacterial Spot,Field A,2025-07-07,0.724,Afternoon,Cloudy
+IMG_0094.jpg,Wheat,Septoria Leaf Spot,Field A,2025-07-10,0.727,Morning,Cloudy
+IMG_0095.jpg,Tomato,Late Blight,Field C,2025-06-02,0.838,Evening,Sunny
+IMG_0096.jpg,Maize,Early Blight,Field A,2025-08-16,0.813,Afternoon,Sunny
+IMG_0097.jpg,Tomato,Septoria Leaf Spot,Greenhouse 1,2025-06-27,0.672,Afternoon,Sunny
+IMG_0098.jpg,Wheat,Healthy,Field B,2025-07-26,0.841,Afternoon,Sunny
+IMG_0099.jpg,Potato,Early Blight,Greenhouse 1,2025-07-25,0.828,Afternoon,Cloudy
+IMG_0100.jpg,Pepper,Yellow Leaf Curl,Field C,2025-06-20,0.976,Morning,Sunny
+IMG_0101.jpg,Potato,Septoria Leaf Spot,Field A,2025-07-08,0.709,Morning,Sunny
+IMG_0102.jpg,Tomato,Yellow Leaf Curl,Greenhouse 1,2025-09-10,0.661,Afternoon,Overcast
+IMG_0103.jpg,Pepper,Mosaic Virus,Field A,2025-07-09,0.918,Evening,Overcast
+IMG_0104.jpg,Potato,Yellow Leaf Curl,Field A,2025-07-21,0.701,Afternoon,Sunny
+IMG_0105.jpg,Tomato,Healthy,Field B,2025-08-20,0.905,Evening,Cloudy
+IMG_0106.jpg,Maize,Early Blight,Greenhouse 1,2025-08-23,0.787,Afternoon,Overcast
+IMG_0107.jpg,Wheat,Mosaic Virus,Greenhouse 1,2025-06-20,0.664,Afternoon,Overcast
+IMG_0108.jpg,Pepper,Septoria Leaf Spot,Field A,2025-06-08,0.977,Evening,Overcast
+IMG_0109.jpg,Tomato,Septoria Leaf Spot,Field A,2025-07-16,0.826,Afternoon,Cloudy
+IMG_0110.jpg,Potato,Yellow Leaf Curl,Greenhouse 1,2025-06-16,0.768,Afternoon,Cloudy
+IMG_0111.jpg,Tomato,Late Blight,Field C,2025-09-23,0.818,Evening,Cloudy
+IMG_0112.jpg,Wheat,Healthy,Greenhouse 1,2025-06-11,0.736,Morning,Cloudy
+IMG_0113.jpg,Wheat,Healthy,Greenhouse 1,2025-09-02,0.714,Afternoon,Overcast
+IMG_0114.jpg,Maize,Mosaic Virus,Field A,2025-07-09,0.837,Afternoon,Cloudy
+IMG_0115.jpg,Maize,Early Blight,Field A,2025-07-23,0.704,Evening,Sunny
+IMG_0116.jpg,Wheat,Yellow Leaf Curl,Field A,2025-07-27,0.96,Afternoon,Sunny
+IMG_0117.jpg,Potato,Mosaic Virus,Field C,2025-08-14,0.934,Afternoon,Sunny
+IMG_0118.jpg,Maize,Late Blight,Greenhouse 1,2025-07-20,0.823,Morning,Sunny
+IMG_0119.jpg,Pepper,Yellow Leaf Curl,Field C,2025-08-27,0.651,Evening,Cloudy
+IMG_0120.jpg,Wheat,Mosaic Virus,Field B,2025-09-18,0.815,Afternoon,Overcast
+IMG_0121.jpg,Wheat,Yellow Leaf Curl,Greenhouse 1,2025-08-28,0.714,Evening,Sunny
+IMG_0122.jpg,Wheat,Yellow Leaf Curl,Field B,2025-09-02,0.758,Afternoon,Overcast
+IMG_0123.jpg,Maize,Yellow Leaf Curl,Field B,2025-09-02,0.693,Evening,Cloudy
+IMG_0124.jpg,Tomato,Mosaic Virus,Field A,2025-09-01,0.896,Afternoon,Overcast
+IMG_0125.jpg,Potato,Early Blight,Greenhouse 1,2025-08-11,0.862,Afternoon,Overcast
+IMG_0126.jpg,Tomato,Bacterial Spot,Greenhouse 1,2025-08-21,0.894,Afternoon,Overcast
+IMG_0127.jpg,Tomato,Early Blight,Field B,2025-08-08,0.904,Afternoon,Sunny
+IMG_0128.jpg,Tomato,Mosaic Virus,Field B,2025-08-01,0.666,Morning,Cloudy
+IMG_0129.jpg,Pepper,Bacterial Spot,Greenhouse 1,2025-07-08,0.831,Evening,Overcast
+IMG_0130.jpg,Potato,Late Blight,Field B,2025-06-20,0.946,Evening,Overcast
+IMG_0131.jpg,Potato,Mosaic Virus,Field B,2025-07-15,0.867,Afternoon,Cloudy
+IMG_0132.jpg,Tomato,Mosaic Virus,Field C,2025-07-03,0.8,Afternoon,Overcast
+IMG_0133.jpg,Pepper,Yellow Leaf Curl,Field C,2025-09-28,0.753,Afternoon,Cloudy
+IMG_0134.jpg,Tomato,Leaf Mold,Greenhouse 1,2025-08-19,0.751,Evening,Cloudy
+IMG_0135.jpg,Tomato,Yellow Leaf Curl,Field C,2025-06-19,0.944,Evening,Sunny
+IMG_0136.jpg,Wheat,Mosaic Virus,Field C,2025-07-20,0.923,Morning,Overcast
+IMG_0137.jpg,Potato,Septoria Leaf Spot,Field B,2025-06-21,0.87,Afternoon,Cloudy
+IMG_0138.jpg,Tomato,Bacterial Spot,Field B,2025-06-10,0.761,Afternoon,Sunny
+IMG_0139.jpg,Potato,Late Blight,Field C,2025-08-27,0.706,Afternoon,Cloudy
+IMG_0140.jpg,Pepper,Early Blight,Greenhouse 1,2025-06-05,0.906,Morning,Overcast
+IMG_0141.jpg,Maize,Bacterial Spot,Field A,2025-09-01,0.74,Morning,Cloudy
+IMG_0142.jpg,Pepper,Septoria Leaf Spot,Greenhouse 1,2025-08-04,0.879,Afternoon,Sunny
+IMG_0143.jpg,Wheat,Bacterial Spot,Field B,2025-06-21,0.93,Evening,Cloudy
+IMG_0144.jpg,Maize,Early Blight,Field B,2025-06-02,0.753,Afternoon,Sunny
+IMG_0145.jpg,Tomato,Leaf Mold,Field B,2025-09-15,0.776,Evening,Overcast
+IMG_0146.jpg,Wheat,Yellow Leaf Curl,Field B,2025-09-21,0.684,Afternoon,Overcast
+IMG_0147.jpg,Maize,Septoria Leaf Spot,Field A,2025-08-07,0.801,Morning,Cloudy
+IMG_0148.jpg,Tomato,Bacterial Spot,Field C,2025-06-13,0.744,Morning,Cloudy
+IMG_0149.jpg,Tomato,Leaf Mold,Field A,2025-06-26,0.763,Morning,Overcast
+IMG_0150.jpg,Potato,Early Blight,Field B,2025-07-27,0.946,Afternoon,Sunny
+IMG_0151.jpg,Wheat,Healthy,Field C,2025-07-05,0.834,Morning,Sunny
+IMG_0152.jpg,Tomato,Late Blight,Field A,2025-08-26,0.918,Evening,Cloudy
+IMG_0153.jpg,Tomato,Late Blight,Field C,2025-06-05,0.902,Evening,Sunny
+IMG_0154.jpg,Tomato,Mosaic Virus,Greenhouse 1,2025-08-17,0.852,Afternoon,Overcast
+IMG_0155.jpg,Potato,Healthy,Field C,2025-09-21,0.978,Morning,Cloudy
+IMG_0156.jpg,Maize,Yellow Leaf Curl,Field A,2025-09-23,0.959,Morning,Sunny
+IMG_0157.jpg,Pepper,Late Blight,Field A,2025-07-09,0.862,Evening,Overcast
+IMG_0158.jpg,Pepper,Yellow Leaf Curl,Field C,2025-09-17,0.856,Morning,Overcast
+IMG_0159.jpg,Tomato,Leaf Mold,Greenhouse 1,2025-09-08,0.791,Afternoon,Cloudy
+IMG_0160.jpg,Maize,Early Blight,Field C,2025-09-11,0.876,Afternoon,Sunny
+IMG_0161.jpg,Maize,Early Blight,Field A,2025-06-03,0.797,Evening,Overcast
+IMG_0162.jpg,Pepper,Late Blight,Field A,2025-08-22,0.692,Afternoon,Overcast
+IMG_0163.jpg,Maize,Healthy,Field C,2025-08-12,0.685,Evening,Sunny
+IMG_0164.jpg,Potato,Mosaic Virus,Field B,2025-06-12,0.937,Afternoon,Sunny
+IMG_0165.jpg,Pepper,Leaf Mold,Greenhouse 1,2025-06-20,0.966,Evening,Cloudy
+IMG_0166.jpg,Tomato,Late Blight,Field C,2025-08-11,0.769,Morning,Sunny
+IMG_0167.jpg,Wheat,Yellow Leaf Curl,Field A,2025-07-24,0.865,Morning,Sunny
+IMG_0168.jpg,Wheat,Leaf Mold,Greenhouse 1,2025-09-15,0.766,Afternoon,Cloudy
+IMG_0169.jpg,Pepper,Early Blight,Field A,2025-07-06,0.907,Morning,Overcast
+IMG_0170.jpg,Tomato,Septoria Leaf Spot,Greenhouse 1,2025-09-16,0.856,Afternoon,Cloudy
+IMG_0171.jpg,Potato,Early Blight,Field C,2025-09-04,0.746,Evening,Overcast
+IMG_0172.jpg,Maize,Septoria Leaf Spot,Field A,2025-07-13,0.985,Morning,Sunny
+IMG_0173.jpg,Potato,Septoria Leaf Spot,Field B,2025-07-25,0.737,Afternoon,Sunny
+IMG_0174.jpg,Tomato,Mosaic Virus,Greenhouse 1,2025-07-05,0.779,Evening,Sunny
+IMG_0175.jpg,Wheat,Bacterial Spot,Field A,2025-09-28,0.902,Afternoon,Sunny
+IMG_0176.jpg,Maize,Early Blight,Field C,2025-09-19,0.788,Evening,Cloudy
+IMG_0177.jpg,Pepper,Early Blight,Greenhouse 1,2025-06-11,0.708,Evening,Cloudy
+IMG_0178.jpg,Pepper,Early Blight,Greenhouse 1,2025-06-08,0.798,Afternoon,Overcast
+IMG_0179.jpg,Tomato,Yellow Leaf Curl,Field C,2025-08-08,0.763,Morning,Sunny
+IMG_0180.jpg,Wheat,Early Blight,Field B,2025-08-12,0.897,Evening,Sunny
+IMG_0181.jpg,Potato,Early Blight,Field B,2025-08-07,0.709,Morning,Overcast
+IMG_0182.jpg,Tomato,Late Blight,Greenhouse 1,2025-09-25,0.842,Evening,Cloudy
+IMG_0183.jpg,Wheat,Bacterial Spot,Field C,2025-07-15,0.673,Afternoon,Overcast
+IMG_0184.jpg,Pepper,Septoria Leaf Spot,Field A,2025-08-17,0.675,Afternoon,Cloudy
+IMG_0185.jpg,Tomato,Healthy,Field C,2025-08-03,0.869,Morning,Overcast
+IMG_0186.jpg,Wheat,Yellow Leaf Curl,Greenhouse 1,2025-06-15,0.959,Evening,Overcast
+IMG_0187.jpg,Potato,Bacterial Spot,Greenhouse 1,2025-07-02,0.803,Afternoon,Overcast
+IMG_0188.jpg,Tomato,Late Blight,Field A,2025-07-23,0.799,Afternoon,Overcast
+IMG_0189.jpg,Wheat,Late Blight,Field C,2025-08-10,0.782,Afternoon,Overcast
+IMG_0190.jpg,Wheat,Healthy,Field C,2025-06-11,0.682,Evening,Cloudy
+IMG_0191.jpg,Pepper,Septoria Leaf Spot,Field B,2025-08-03,0.848,Morning,Cloudy
+IMG_0192.jpg,Pepper,Yellow Leaf Curl,Field B,2025-06-10,0.84,Evening,Cloudy
+IMG_0193.jpg,Potato,Early Blight,Greenhouse 1,2025-08-01,0.773,Morning,Sunny
+IMG_0194.jpg,Pepper,Mosaic Virus,Field B,2025-07-05,0.703,Afternoon,Sunny
+IMG_0195.jpg,Wheat,Healthy,Field C,2025-07-20,0.778,Morning,Sunny
+IMG_0196.jpg,Wheat,Late Blight,Greenhouse 1,2025-06-14,0.774,Evening,Sunny
+IMG_0197.jpg,Maize,Septoria Leaf Spot,Greenhouse 1,2025-07-18,0.731,Afternoon,Sunny
+IMG_0198.jpg,Pepper,Mosaic Virus,Greenhouse 1,2025-08-25,0.78,Evening,Cloudy
+IMG_0199.jpg,Potato,Leaf Mold,Field B,2025-08-02,0.868,Afternoon,Overcast
+IMG_0200.jpg,Tomato,Early Blight,Field C,2025-06-25,0.705,Afternoon,Overcast
+IMG_0201.jpg,Potato,Yellow Leaf Curl,Field A,2025-07-27,0.803,Afternoon,Sunny
+IMG_0202.jpg,Maize,Healthy,Greenhouse 1,2025-08-08,0.781,Morning,Cloudy
+IMG_0203.jpg,Potato,Healthy,Field C,2025-06-27,0.893,Afternoon,Sunny
+IMG_0204.jpg,Potato,Healthy,Field C,2025-09-23,0.933,Evening,Cloudy
+IMG_0205.jpg,Maize,Healthy,Field A,2025-06-09,0.723,Morning,Overcast
+IMG_0206.jpg,Wheat,Yellow Leaf Curl,Field A,2025-08-08,0.752,Morning,Sunny
+IMG_0207.jpg,Maize,Mosaic Virus,Field A,2025-06-27,0.958,Evening,Overcast
+IMG_0208.jpg,Tomato,Leaf Mold,Field B,2025-08-14,0.651,Afternoon,Sunny
+IMG_0209.jpg,Wheat,Yellow Leaf Curl,Field B,2025-06-17,0.981,Morning,Overcast
+IMG_0210.jpg,Wheat,Healthy,Greenhouse 1,2025-09-02,0.866,Afternoon,Cloudy
+IMG_0211.jpg,Tomato,Bacterial Spot,Field A,2025-08-08,0.899,Evening,Sunny
+IMG_0212.jpg,Wheat,Bacterial Spot,Field B,2025-06-12,0.836,Evening,Sunny
+IMG_0213.jpg,Maize,Mosaic Virus,Field B,2025-07-03,0.893,Afternoon,Sunny
+IMG_0214.jpg,Pepper,Leaf Mold,Field A,2025-07-02,0.757,Afternoon,Overcast
+IMG_0215.jpg,Maize,Mosaic Virus,Field C,2025-06-25,0.87,Afternoon,Cloudy
+IMG_0216.jpg,Tomato,Bacterial Spot,Field C,2025-06-26,0.775,Afternoon,Overcast
+IMG_0217.jpg,Maize,Yellow Leaf Curl,Field C,2025-07-16,0.885,Afternoon,Overcast
+IMG_0218.jpg,Pepper,Early Blight,Greenhouse 1,2025-06-14,0.855,Morning,Overcast
+IMG_0219.jpg,Pepper,Bacterial Spot,Field A,2025-06-11,0.875,Afternoon,Cloudy
+IMG_0220.jpg,Wheat,Yellow Leaf Curl,Field B,2025-09-12,0.802,Evening,Cloudy
+IMG_0221.jpg,Wheat,Yellow Leaf Curl,Field C,2025-06-03,0.878,Afternoon,Cloudy
+IMG_0222.jpg,Wheat,Late Blight,Field A,2025-07-28,0.857,Afternoon,Sunny
+IMG_0223.jpg,Potato,Early Blight,Field B,2025-08-12,0.78,Evening,Sunny
+IMG_0224.jpg,Wheat,Late Blight,Greenhouse 1,2025-08-12,0.801,Morning,Overcast
+IMG_0225.jpg,Potato,Bacterial Spot,Greenhouse 1,2025-08-21,0.745,Morning,Sunny
+IMG_0226.jpg,Potato,Mosaic Virus,Greenhouse 1,2025-06-09,0.913,Evening,Cloudy
+IMG_0227.jpg,Potato,Septoria Leaf Spot,Greenhouse 1,2025-07-04,0.696,Morning,Cloudy
+IMG_0228.jpg,Potato,Mosaic Virus,Field A,2025-08-22,0.768,Morning,Overcast
+IMG_0229.jpg,Wheat,Septoria Leaf Spot,Field C,2025-07-23,0.891,Evening,Overcast
+IMG_0230.jpg,Potato,Bacterial Spot,Field B,2025-06-07,0.919,Morning,Cloudy
+IMG_0231.jpg,Tomato,Bacterial Spot,Field C,2025-09-26,0.984,Morning,Overcast
+IMG_0232.jpg,Tomato,Early Blight,Field C,2025-09-23,0.894,Evening,Cloudy
+IMG_0233.jpg,Maize,Early Blight,Field B,2025-08-21,0.675,Afternoon,Overcast
+IMG_0234.jpg,Wheat,Bacterial Spot,Field B,2025-07-25,0.979,Afternoon,Overcast
+IMG_0235.jpg,Tomato,Early Blight,Field B,2025-08-06,0.705,Evening,Sunny
+IMG_0236.jpg,Pepper,Septoria Leaf Spot,Field A,2025-08-07,0.866,Evening,Cloudy
+IMG_0237.jpg,Potato,Septoria Leaf Spot,Field A,2025-07-19,0.97,Morning,Sunny
+IMG_0238.jpg,Wheat,Bacterial Spot,Field A,2025-06-03,0.665,Evening,Overcast
+IMG_0239.jpg,Pepper,Leaf Mold,Greenhouse 1,2025-06-16,0.952,Evening,Cloudy
+IMG_0240.jpg,Pepper,Mosaic Virus,Field B,2025-09-10,0.804,Evening,Sunny
+IMG_0241.jpg,Potato,Mosaic Virus,Greenhouse 1,2025-09-15,0.719,Evening,Sunny
+IMG_0242.jpg,Pepper,Bacterial Spot,Field C,2025-09-05,0.909,Evening,Overcast
+IMG_0243.jpg,Tomato,Bacterial Spot,Field B,2025-09-04,0.741,Morning,Sunny
+IMG_0244.jpg,Tomato,Healthy,Field C,2025-09-28,0.859,Morning,Sunny
+IMG_0245.jpg,Pepper,Bacterial Spot,Field B,2025-07-16,0.989,Afternoon,Cloudy
+IMG_0246.jpg,Pepper,Mosaic Virus,Field A,2025-06-13,0.822,Morning,Sunny
+IMG_0247.jpg,Wheat,Bacterial Spot,Field A,2025-06-10,0.818,Evening,Overcast
+IMG_0248.jpg,Maize,Septoria Leaf Spot,Field A,2025-06-14,0.696,Afternoon,Overcast
+IMG_0249.jpg,Pepper,Yellow Leaf Curl,Field C,2025-06-13,0.667,Evening,Sunny
+IMG_0250.jpg,Pepper,Septoria Leaf Spot,Field A,2025-09-17,0.803,Evening,Cloudy
+IMG_0251.jpg,Wheat,Early Blight,Field B,2025-06-13,0.777,Afternoon,Overcast
+IMG_0252.jpg,Pepper,Late Blight,Field B,2025-09-17,0.664,Morning,Sunny
+IMG_0253.jpg,Pepper,Mosaic Virus,Greenhouse 1,2025-07-20,0.954,Morning,Cloudy
+IMG_0254.jpg,Wheat,Bacterial Spot,Field B,2025-09-20,0.901,Afternoon,Overcast
+IMG_0255.jpg,Pepper,Mosaic Virus,Field C,2025-09-27,0.656,Afternoon,Overcast
+IMG_0256.jpg,Tomato,Yellow Leaf Curl,Field C,2025-06-20,0.811,Evening,Overcast
+IMG_0257.jpg,Wheat,Leaf Mold,Field A,2025-09-06,0.828,Evening,Overcast
+IMG_0258.jpg,Maize,Late Blight,Field B,2025-06-19,0.972,Morning,Sunny
+IMG_0259.jpg,Tomato,Mosaic Virus,Field C,2025-09-05,0.79,Morning,Cloudy
+IMG_0260.jpg,Wheat,Mosaic Virus,Field A,2025-07-17,0.72,Afternoon,Overcast
+IMG_0261.jpg,Maize,Yellow Leaf Curl,Field C,2025-07-15,0.96,Afternoon,Overcast
+IMG_0262.jpg,Pepper,Septoria Leaf Spot,Greenhouse 1,2025-07-08,0.745,Afternoon,Sunny
+IMG_0263.jpg,Pepper,Septoria Leaf Spot,Field B,2025-09-11,0.813,Evening,Overcast
+IMG_0264.jpg,Pepper,Septoria Leaf Spot,Field A,2025-09-13,0.928,Morning,Cloudy
+IMG_0265.jpg,Tomato,Septoria Leaf Spot,Field A,2025-08-15,0.873,Evening,Cloudy
+IMG_0266.jpg,Potato,Leaf Mold,Field C,2025-08-05,0.687,Evening,Overcast
+IMG_0267.jpg,Potato,Leaf Mold,Field A,2025-07-21,0.729,Morning,Cloudy
+IMG_0268.jpg,Pepper,Mosaic Virus,Field A,2025-07-01,0.978,Morning,Cloudy
+IMG_0269.jpg,Maize,Mosaic Virus,Field B,2025-08-11,0.747,Morning,Sunny
+IMG_0270.jpg,Wheat,Leaf Mold,Field A,2025-07-14,0.95,Morning,Sunny
+IMG_0271.jpg,Maize,Mosaic Virus,Field B,2025-08-02,0.653,Evening,Overcast
+IMG_0272.jpg,Tomato,Bacterial Spot,Field C,2025-09-21,0.835,Afternoon,Sunny
+IMG_0273.jpg,Wheat,Mosaic Virus,Field C,2025-07-26,0.688,Morning,Overcast
+IMG_0274.jpg,Maize,Septoria Leaf Spot,Field B,2025-06-24,0.765,Afternoon,Overcast
+IMG_0275.jpg,Potato,Late Blight,Greenhouse 1,2025-09-17,0.761,Afternoon,Overcast
+IMG_0276.jpg,Tomato,Late Blight,Field B,2025-09-11,0.968,Morning,Cloudy
+IMG_0277.jpg,Maize,Leaf Mold,Greenhouse 1,2025-08-11,0.753,Evening,Overcast
+IMG_0278.jpg,Tomato,Septoria Leaf Spot,Field C,2025-07-02,0.877,Afternoon,Cloudy
+IMG_0279.jpg,Potato,Yellow Leaf Curl,Field C,2025-06-21,0.961,Afternoon,Cloudy
+IMG_0280.jpg,Wheat,Leaf Mold,Field B,2025-07-16,0.702,Evening,Overcast
+IMG_0281.jpg,Pepper,Yellow Leaf Curl,Greenhouse 1,2025-07-25,0.734,Evening,Sunny
+IMG_0282.jpg,Wheat,Mosaic Virus,Field C,2025-06-19,0.688,Evening,Overcast
+IMG_0283.jpg,Potato,Late Blight,Field B,2025-08-28,0.827,Morning,Overcast
+IMG_0284.jpg,Potato,Mosaic Virus,Field A,2025-09-26,0.669,Morning,Overcast
+IMG_0285.jpg,Maize,Mosaic Virus,Field A,2025-09-22,0.924,Evening,Sunny
+IMG_0286.jpg,Maize,Septoria Leaf Spot,Field A,2025-07-19,0.675,Afternoon,Cloudy
+IMG_0287.jpg,Tomato,Healthy,Field A,2025-09-02,0.748,Morning,Sunny
+IMG_0288.jpg,Maize,Bacterial Spot,Greenhouse 1,2025-09-28,0.962,Afternoon,Cloudy
+IMG_0289.jpg,Tomato,Late Blight,Field C,2025-06-06,0.988,Afternoon,Overcast
+IMG_0290.jpg,Potato,Leaf Mold,Field A,2025-06-10,0.807,Evening,Overcast
+IMG_0291.jpg,Maize,Yellow Leaf Curl,Field B,2025-07-15,0.768,Afternoon,Sunny
+IMG_0292.jpg,Tomato,Healthy,Greenhouse 1,2025-06-08,0.72,Morning,Overcast
+IMG_0293.jpg,Tomato,Mosaic Virus,Field A,2025-07-24,0.665,Afternoon,Sunny
+IMG_0294.jpg,Wheat,Leaf Mold,Field A,2025-07-17,0.988,Morning,Overcast
+IMG_0295.jpg,Wheat,Bacterial Spot,Field C,2025-07-10,0.948,Evening,Overcast
+IMG_0296.jpg,Potato,Yellow Leaf Curl,Field C,2025-08-02,0.839,Evening,Overcast
+IMG_0297.jpg,Potato,Yellow Leaf Curl,Greenhouse 1,2025-06-12,0.97,Evening,Cloudy
+IMG_0298.jpg,Wheat,Bacterial Spot,Greenhouse 1,2025-09-05,0.752,Morning,Overcast
+IMG_0299.jpg,Maize,Leaf Mold,Field B,2025-08-28,0.891,Afternoon,Sunny
+IMG_0300.jpg,Wheat,Yellow Leaf Curl,Greenhouse 1,2025-07-13,0.733,Morning,Cloudy

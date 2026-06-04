@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CropShield — AI Crop Disease Detector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0f0a; --surface: #111811; --border: #1e2e1e;
+    --green: #4ade80; --green-dim: #166534; --text: #e8f5e8;
+    --muted: #6b7c6b; --accent: #bbf7d0;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:'Space Mono',monospace; min-height:100vh; }
+  header { border-bottom:1px solid var(--border); padding:24px 40px; display:flex; align-items:center; gap:16px; }
+  .logo { font-family:'Syne',sans-serif; font-weight:800; font-size:1.5rem; color:var(--green); letter-spacing:-0.5px; }
+  .logo span { color:var(--muted); font-weight:400; }
+  .tagline { font-size:0.75rem; color:var(--muted); }
+  main { max-width:960px; margin:0 auto; padding:48px 24px; }
+  h1 { font-family:'Syne',sans-serif; font-size:2.8rem; font-weight:800; line-height:1.1; margin-bottom:12px; }
+  h1 em { color:var(--green); font-style:normal; }
+  .subtitle { color:var(--muted); font-size:0.85rem; margin-bottom:48px; max-width:500px; line-height:1.7; }
+  .upload-zone {
+    border:2px dashed var(--border); border-radius:16px; padding:60px 40px;
+    text-align:center; cursor:pointer; transition:all 0.3s;
+    background: linear-gradient(135deg, var(--surface), var(--bg));
+  }
+  .upload-zone:hover, .upload-zone.drag-over { border-color:var(--green); background:rgba(74,222,128,0.03); }
+  .upload-zone .icon { font-size:3rem; margin-bottom:16px; }
+  .upload-zone p { color:var(--muted); font-size:0.85rem; line-height:1.8; }
+  .upload-zone strong { color:var(--green); }
+  #fileInput { display:none; }
+  #preview-section { display:none; margin-top:32px; }
+  .preview-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .preview-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+  .preview-card img { width:100%; height:220px; object-fit:cover; display:block; }
+  .preview-card .card-body { padding:16px; }
+  .card-label { font-size:0.7rem; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 28px; border-radius:8px; font-family:'Space Mono',monospace; font-size:0.85rem; font-weight:700; cursor:pointer; border:none; transition:all 0.2s; }
+  .btn-primary { background:var(--green); color:#000; }
+  .btn-primary:hover { background:var(--accent); transform:translateY(-1px); }
+  .btn-outline { background:transparent; color:var(--green); border:1px solid var(--green); }
+  .btn-outline:hover { background:rgba(74,222,128,0.1); }
+  .btn-row { display:flex; gap:12px; margin-top:16px; }
+  #result-section { display:none; margin-top:32px; }
+  .result-card { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:32px; }
+  .disease-header { display:flex; align-items:center; gap:16px; margin-bottom:24px; }
+  .disease-dot { width:16px; height:16px; border-radius:50%; flex-shrink:0; }
+  .disease-name { font-family:'Syne',sans-serif; font-size:2rem; font-weight:800; }
+  .severity-badge { padding:4px 12px; border-radius:20px; font-size:0.75rem; font-weight:700; background:rgba(74,222,128,0.1); border:1px solid var(--green-dim); color:var(--green); }
+  .confidence-bar { margin:16px 0; }
+  .conf-label { font-size:0.75rem; color:var(--muted); margin-bottom:6px; display:flex; justify-content:space-between; }
+  .bar-bg { background:var(--border); border-radius:4px; height:8px; }
+  .bar-fill { height:8px; border-radius:4px; background:var(--green); transition:width 1s ease; }
+  .treatment-box { background:rgba(74,222,128,0.05); border:1px solid var(--green-dim); border-radius:10px; padding:16px; margin:20px 0; }
+  .treatment-box h4 { font-size:0.75rem; letter-spacing:1px; text-transform:uppercase; color:var(--green); margin-bottom:8px; }
+  .treatment-box p { font-size:0.85rem; line-height:1.7; color:var(--text); }
+  .top3 { margin-top:20px; }
+  .top3 h4 { font-size:0.75rem; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
+  .pred-row { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+  .pred-name { font-size:0.8rem; min-width:160px; color:var(--text); }
+  .pred-bar { flex:1; background:var(--border); border-radius:3px; height:6px; }
+  .pred-bar-fill { height:6px; border-radius:3px; background:var(--green-dim); }
+  .pred-pct { font-size:0.75rem; color:var(--muted); min-width:45px; text-align:right; }
+  .loading { display:none; text-align:center; padding:40px; }
+  .spinner { width:40px; height:40px; border:3px solid var(--border); border-top-color:var(--green); border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 16px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .loading p { color:var(--muted); font-size:0.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="logo">Crop<span>Shield</span></div>
+    <div class="tagline">AI-powered plant disease detection for farmers</div>
+  </div>
+</header>
+<main>
+  <h1>Diagnose crop disease<br>in <em>seconds</em></h1>
+  <p class="subtitle">Upload a photo of your plant's leaf. Our AI analyzes color patterns and textures to identify diseases and recommend treatment — no agronomist needed.</p>
+
+  <div class="upload-zone" id="uploadZone">
+    <div class="icon">🌿</div>
+    <p><strong>Drop a leaf photo here</strong><br>or click to browse<br><br>JPG, PNG — max 10MB</p>
+    <input type="file" id="fileInput" accept="image/*">
+  </div>
+
+  <div id="preview-section">
+    <div class="preview-grid">
+      <div class="preview-card">
+        <img id="previewImg" src="" alt="Uploaded leaf">
+        <div class="card-body">
+          <div class="card-label">Uploaded Image</div>
+          <div id="fileName" style="font-size:0.8rem;color:var(--text)"></div>
+        </div>
+      </div>
+      <div class="preview-card" style="display:flex;flex-direction:column;justify-content:center;padding:32px;">
+        <p style="color:var(--muted);font-size:0.85rem;line-height:1.8;margin-bottom:24px;">Image loaded and ready for analysis. Click <strong style="color:var(--green)">Analyze Disease</strong> to run the AI model.</p>
+        <div class="btn-row">
+          <button class="btn btn-primary" onclick="analyzeImage()">🔬 Analyze Disease</button>
+          <button class="btn btn-outline" onclick="resetApp()">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    <p>Analyzing leaf patterns and color signatures...</p>
+  </div>
+
+  <div id="result-section">
+    <div class="result-card">
+      <div class="disease-header">
+        <div class="disease-dot" id="diseaseDot"></div>
+        <div>
+          <div class="disease-name" id="diseaseName"></div>
+          <span class="severity-badge" id="severityBadge"></span>
+        </div>
+      </div>
+      <div class="confidence-bar">
+        <div class="conf-label"><span>Detection Confidence</span><span id="confText"></span></div>
+        <div class="bar-bg"><div class="bar-fill" id="confBar" style="width:0%"></div></div>
+      </div>
+      <div class="treatment-box">
+        <h4>💊 Recommended Treatment</h4>
+        <p id="treatmentText"></p>
+      </div>
+      <div class="top3">
+        <h4>All predictions</h4>
+        <div id="top3List"></div>
+      </div>
+      <div class="btn-row" style="margin-top:24px;">
+        <button class="btn btn-outline" onclick="resetApp()">Analyze Another</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+const API_URL = 'http://localhost:5001';
+let currentImageB64 = null;
+
+const uploadZone = document.getElementById('uploadZone');
+const fileInput = document.getElementById('fileInput');
+
+uploadZone.addEventListener('click', () => fileInput.click());
+uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
+uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
+uploadZone.addEventListener('drop', e => {
+  e.preventDefault(); uploadZone.classList.remove('drag-over');
+  const file = e.dataTransfer.files[0];
+  if (file) loadFile(file);
+});
+fileInput.addEventListener('change', e => { if (e.target.files[0]) loadFile(e.target.files[0]); });
+
+function loadFile(file) {
+  const reader = new FileReader();
+  reader.onload = e => {
+    currentImageB64 = e.target.result;
+    document.getElementById('previewImg').src = currentImageB64;
+    document.getElementById('fileName').textContent = file.name;
+    document.getElementById('preview-section').style.display = 'block';
+    uploadZone.style.display = 'none';
+    document.getElementById('result-section').style.display = 'none';
+  };
+  reader.readAsDataURL(file);
+}
+
+async function analyzeImage() {
+  if (!currentImageB64) return;
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('result-section').style.display = 'none';
+  try {
+    const resp = await fetch(`${API_URL}/api/predict`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({image: currentImageB64})
+    });
+    const data = await resp.json();
+    if (data.success) showResult(data);
+    else alert('Analysis failed: ' + data.error);
+  } catch (e) {
+    alert('Could not connect to backend. Make sure app.py is running on port 5001.');
+  }
+  document.getElementById('loading').style.display = 'none';
+}
+
+function showResult(data) {
+  document.getElementById('diseaseDot').style.background = data.color;
+  document.getElementById('diseaseName').textContent = data.disease;
+  document.getElementById('severityBadge').textContent = `Severity: ${data.severity}`;
+  document.getElementById('confText').textContent = `${data.confidence}%`;
+  document.getElementById('treatmentText').textContent = data.treatment;
+  setTimeout(() => { document.getElementById('confBar').style.width = data.confidence + '%'; }, 100);
+  const list = document.getElementById('top3List');
+  list.innerHTML = data.top_predictions.map(p => `
+    <div class="pred-row">
+      <div class="pred-name">${p.disease}</div>
+      <div class="pred-bar"><div class="pred-bar-fill" style="width:${p.probability}%"></div></div>
+      <div class="pred-pct">${p.probability}%</div>
+    </div>`).join('');
+  document.getElementById('result-section').style.display = 'block';
+}
+
+function resetApp() {
+  currentImageB64 = null;
+  fileInput.value = '';
+  document.getElementById('preview-section').style.display = 'none';
+  document.getElementById('result-section').style.display = 'none';
+  document.getElementById('loading').style.display = 'none';
+  uploadZone.style.display = 'block';
+}
+</script>
+</body>
+</html>

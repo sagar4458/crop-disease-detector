@@ -1,0 +1,22 @@
+{
+  "total_samples": 300,
+  "disease_distribution": {
+    "Healthy": 45,
+    "Early Blight": 27,
+    "Late Blight": 39,
+    "Leaf Mold": 36,
+    "Septoria Leaf Spot": 27,
+    "Bacterial Spot": 42,
+    "Yellow Leaf Curl": 48,
+    "Mosaic Virus": 31
+  },
+  "crops_covered": [
+    "Tomato",
+    "Potato",
+    "Pepper",
+    "Maize",
+    "Wheat"
+  ],
+  "collection_period": "June\u2013September 2025",
+  "notes": "Images collected from local farms and research stations. Labels verified by agronomist."
+}
